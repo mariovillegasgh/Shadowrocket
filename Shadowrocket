@@ -17,6 +17,8 @@ always-reject-url-rewrite = false
 dns-direct-fallback-proxy = false
 
 [Rule]
+# Accelerate most visited sites
+DOMAIN,search.itunes.apple.com,DIRECT
 # Ad Block
 RULE-SET,https://raw.githubusercontent.com/mariovillegasgh/Shadowrocket/main/AdBlock,REJECT
 # Rules
