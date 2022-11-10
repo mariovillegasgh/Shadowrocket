@@ -1,35 +1,21 @@
 [General]
-bypass-system = false
-ipv6 = false
-prefer-ipv6 = false
-private-ip-answer = false
-dns-server = system
-skip-proxy = localhost, *.local
-tun-excluded-routes = 0.0.0.0/31
-tun-included-routes = 0.0.0.0/0
-dns-fallback-system = false
-dns-direct-system = false
-icmp-auto-reply = false
-always-reject-url-rewrite = false
-# direct domain fail to resolve use proxy rule
-dns-direct-fallback-proxy = false
+always-real-ip = *.apple.com
+always-reject-url-rewrite = true
+bypass-system = true
+bypass-tun = 0.0.0.0/31
+dns-direct-fallback-proxy = true
+dns-direct-system = true
+dns-fallback-system = true
+dns-server = tls://1.0.0.1, tls://1.1.1.1
+exclude-simple-hostnames = true
+fallback-dns-server = true
+hijack-dns = 8.8.4.4:53, 8.8.8.8:53
+icmp-auto-reply = true
+include = none
+ipv6 = true
+prefer-ipv6 = true
+private-ip-answer = true
+skip-proxy = *.local, localhost
 
 [Rule]
-# Accelerate most visited sites
-DOMAIN,search.itunes.apple.com,DIRECT
-# Ad Block
-RULE-SET,https://raw.githubusercontent.com/mariovillegasgh/Shadowrocket/main/AdBlock,REJECT
-# Rules
-RULE-SET,https://raw.githubusercontent.com/mariovillegasgh/Shadowrocket/main/Rule,PROXY
-# GeoIP
-GEOIP,MX,PROXY
-# Destination
 FINAL,PROXY
-
-[Host]
-# Local
-localhost = 127.0.0.1
-
-[URL Rewrite]
-^https?://(www.)?g.cn https://www.google.com 302
-^https?://(www.)?google.cn https://www.google.com 302
