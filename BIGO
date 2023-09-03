@@ -1,0 +1,12 @@
+# Domains
+DOMAIN-SUFFIX,bigo.sg
+DOMAIN-SUFFIX,bigo.tv
+DOMAIN-SUFFIX,bigolive.tv
+DOMAIN-SUFFIX,like.video
+DOMAIN-SUFFIX,likee.video
+DOMAIN-SUFFIX,sgmbocast.com
+DOMAIN-SUFFIX,sharemasala.com
+# User
+USER-AGENT,BIGO LIVE*
+USER-AGENT,BigoLive*
+USER-AGENT,bigoshow*
