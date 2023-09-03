@@ -1,0 +1,7 @@
+# Domains
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,mzstatic.com
+# User
+USER-AGENT,com.apple.trustd*
